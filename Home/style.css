@@ -1,0 +1,818 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+  background-color: black;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  list-style: none;
+  align-items: center;
+  transition: 0.3s ease;
+  border: 0;
+  outline: none;
+  box-sizing: border-box;
+}
+
+a {
+  color: white;
+}
+
+.header {
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 7rem;
+}
+
+.navigation ul li {
+  display: inline-block;
+  margin-left: 1rem;
+}
+
+.btn-1 {
+  padding: 0.85rem 1rem;
+  border: 1.5px solid white;
+  border-radius: 30px;
+  background-color: transparent;
+}
+
+.btn-2 {
+  padding: 0.95rem 1.15rem;
+  border-radius: 30px;
+  background-color: red;
+}
+
+.brands-section {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.brands-section h1 {
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+
+.brands-section h1 span {
+  font-weight: 700;
+}
+
+.brands-section p {
+  color: #ccc;
+  margin-bottom: 50px;
+  font-size: 1rem;
+}
+
+.brands-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.brand-card img {
+  background-color: white;
+}
+
+.brand-card {
+  padding: 20px;
+  border-radius: 8px;
+  width: 280px;
+  height: 8.5rem;
+  text-align: center;
+}
+
+.brand-card img {
+  width: 255px;
+  padding: 20px;
+  border-radius: 1px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.brand-card button {
+  margin-top: 30px;
+  background: none;
+  border: 1px solid #fff;
+  color: #fff;
+  padding: 10px 25px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.brand-card button:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.franchise-section {
+  background-color: rgb(44, 44, 44);
+  color: #fff;
+  text-align: center;
+  padding: 100px 20px;
+  margin-top: 10rem;
+}
+
+.franchise-section h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+}
+
+.franchise-section h2 {
+  font-size: 2.5rem;
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+.franchise-section p {
+  color: #ccc;
+  margin-top: 15px;
+  font-size: 1rem;
+  margin-bottom: 60px;
+}
+
+.franchise-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  margin-top: 10rem;
+  flex-wrap: wrap;
+}
+
+.franchise-text {
+  text-align: left;
+  max-width: 400px;
+}
+
+.franchise-text h3 {
+  color: red;
+  letter-spacing: 3px;
+  margin-bottom: 10px;
+}
+
+.franchise-text h4 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.franchise-text p {
+  color: #ccc;
+  margin: 10px 0;
+  font-size: 1rem;
+}
+
+.franchise-text i {
+  color: red;
+  margin-right: 10px;
+}
+
+.directions-btn {
+  margin-top: 25px;
+  background: none;
+  border: 1px solid #fff;
+  color: #fff;
+  padding: 10px 25px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.directions-btn:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+
+.snp-section {
+  background-color: #000;
+  color: #fff;
+  padding: 80px 60px;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.snp-heading {
+  margin-bottom: 60px;
+}
+
+.snp-title {
+  font-size: 3rem;
+  font-weight: 700;
+  font-family: 'Georgia', serif;
+}
+
+.snp-subtitle {
+  font-size: 1.9rem;
+  font-weight: 600;
+  margin-top: 10px;
+  color: #fff;
+}
+
+.snp-card-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-bottom: 60px;
+}
+
+.snp-card {
+  background-color: #111;
+  width: 320px;
+  height: 420px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.snp-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 2px solid #e74c3c;
+}
+
+
+.snp-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(255, 255, 255, 0.2);
+}
+
+.snp-location {
+  color: #e74c3c;
+  letter-spacing: 2px;
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.snp-name {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.snp-info {
+  font-size: 14px;
+  color: #ccc;
+  margin: 5px 20px;
+}
+
+.snp-info i {
+  color: #e74c3c;
+  margin-right: 6px;
+}
+
+.snp-btn-wrapper {
+  text-align: center;
+}
+
+.snp-view-btn {
+  background: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  padding: 12px 35px;
+  border-radius: 30px;
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.snp-view-btn:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+
+.village-section {
+  background-color: rgb(44, 44, 44);
+  color: #fff;
+  text-align: center;
+  padding: 100px 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.village-title {
+  font-size: 3rem;
+  font-weight: 700;
+  font-family: 'Georgia', serif;
+}
+
+.village-subtitle {
+  font-size: 2.2rem;
+  font-weight: 600;
+  margin-top: 10px;
+  color: #fff;
+}
+
+.village-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 60px;
+  margin-top: 70px;
+}
+
+.village-image img {
+  width: 700px;
+  max-width: 90%;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 4px 20px rgba(255, 255, 255, 0.1);
+}
+
+.village-info {
+  max-width: 400px;
+  text-align: left;
+}
+
+.village-location {
+  color: red;
+  font-weight: 600;
+  letter-spacing: 3px;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.village-name {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+.village-name span {
+  font-weight: 400;
+}
+
+.village-info p {
+  font-size: 1rem;
+  color: #ccc;
+  margin: 10px 0;
+}
+
+.village-info i {
+  color: red;
+  margin-right: 10px;
+}
+
+.village-btn {
+  margin-top: 25px;
+  background: #00a651;
+  color: #fff;
+  border: none;
+  padding: 12px 35px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.village-btn:hover {
+  background-color: #008f46;
+  transform: translateY(-2px);
+}
+
+.express-opening-section {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 100px 40px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.express-opening-title {
+  font-size: 3rem;
+  font-weight: 700;
+  font-family: 'Georgia', serif;
+}
+
+.express-opening-subtitle {
+  font-size: 2.2rem;
+  font-weight: 600;
+  margin-top: 10px;
+  color: #fff;
+}
+
+.express-opening-subtitle span {
+  font-weight: 400;
+}
+
+.express-opening-grid {
+  margin-top: 70px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.express-opening-card {
+  background-color: #fff;
+  color: #000;
+  border-radius: 8px;
+  padding: 40px 20px;
+  text-align: center;
+  height: 280px;
+  box-shadow: 0 4px 20px rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.express-opening-card:hover {
+  transform: translateY(-5px);
+}
+
+.express-opening-card img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 15px;
+}
+
+.opening-soon {
+  color: red;
+  letter-spacing: 3px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.express-opening-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 8px;
+}
+
+.express-opening-card p {
+  font-size: 1rem;
+  margin: 2px 0;
+}
+
+
+.footer-section {
+  background-color: #111;
+  color: #fff;
+  padding: 80px 100px 40px 100px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.footer-column {
+  flex: 1 1 250px;
+  min-width: 250px;
+}
+
+.footer-column img {
+  margin-bottom: 20px;
+}
+
+.footer-column p {
+  color: #ccc;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.footer-column h3 {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.footer-links {
+  margin-top: 15px;
+}
+
+.footer-links a {
+  color: #ccc;
+  font-size: 0.9rem;
+  margin-right: 15px;
+}
+
+.footer-links a:hover {
+  color: red;
+}
+
+.links ul {
+  padding-left: 0;
+}
+
+.links ul li {
+  margin-bottom: 10px;
+}
+
+.links ul li a {
+  color: #ccc;
+  font-size: 0.95rem;
+}
+
+.links ul li a:hover {
+  color: red;
+}
+
+.contact p {
+  margin-bottom: 15px;
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+.contact strong {
+  color: #fff;
+  font-weight: 600;
+}
+
+.follow {
+  text-align: left;
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.social-icons a {
+  background-color: red;
+  color: white;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  background-color: #b30000;
+}
+
+.app-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-right: 7rem;
+}
+
+.app-buttons img {
+  width: 140px;
+  cursor: pointer;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #222;
+  margin-top: 60px;
+  padding-top: 20px;
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+.footer-bottom span {
+  color: #fff;
+  font-weight: 500;
+}
+
+
+@media (max-width: 1200px) {
+  .header {
+    padding: 0.5rem 3rem;
+  }
+
+  .franchise-container,
+  .village-card {
+    gap: 40px;
+  }
+}
+
+@media (max-width: 992px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .navigation ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+
+  .navigation ul li {
+    margin: 0.5rem;
+  }
+
+  .franchise-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .franchise-text {
+    text-align: center;
+  }
+
+  .franchise-container.reverse {
+    flex-direction: column;
+  }
+
+  .village-card {
+    flex-direction: column;
+  }
+
+  .footer-section {
+    padding: 60px 40px;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-column {
+    text-align: center;
+  }
+
+  .app-buttons {
+    margin-right: 0;
+    align-items: center;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .brands-section h1 {
+    font-size: 2rem;
+  }
+
+  .brands-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .brand-card {
+    width: 90%;
+    height: auto;
+  }
+
+  .franchise-section h1 {
+    font-size: 2.2rem;
+  }
+
+  .franchise-section h2 {
+    font-size: 1.8rem;
+  }
+
+  .franchise-container {
+    gap: 40px;
+  }
+
+  .snp-section {
+    padding: 60px 30px;
+  }
+
+  .snp-title {
+    font-size: 2.2rem;
+  }
+
+  .snp-subtitle {
+    font-size: 1.5rem;
+  }
+
+  .snp-card {
+    width: 90%;
+    height: auto;
+  }
+
+  .village-title {
+    font-size: 2.2rem;
+  }
+
+  .village-subtitle {
+    font-size: 1.6rem;
+  }
+
+  .village-info {
+    text-align: center;
+  }
+
+  .express-opening-section {
+    padding: 60px 20px;
+  }
+
+  .express-opening-title {
+    font-size: 2.2rem;
+  }
+
+  .express-opening-subtitle {
+    font-size: 1.6rem;
+  }
+
+  .footer-section {
+    padding: 40px 20px;
+  }
+
+  .footer-column img {
+    width: 140px;
+  }
+}
+
+@media (max-width: 576px) {
+  .header img {
+    width: 120px;
+    height: auto;
+  }
+
+  .btn-1,
+  .btn-2 {
+    padding: 0.6rem 0.9rem;
+    font-size: 0.8rem;
+  }
+
+  .brands-section {
+    padding: 40px 10px;
+  }
+
+  .brands-section h1 {
+    font-size: 1.5rem;
+  }
+
+  .brands-section p {
+    font-size: 0.9rem;
+  }
+
+  .brand-card img {
+    width: 80%;
+    padding: 10px;
+  }
+
+  .franchise-section {
+    padding: 60px 15px;
+    margin-top: 5rem;
+  }
+
+  .franchise-text h4 {
+    font-size: 1.4rem;
+  }
+
+  .snp-section {
+    padding: 40px 10px;
+  }
+
+  .snp-card {
+    width: 100%;
+  }
+
+  .village-section {
+    padding: 60px 15px;
+  }
+
+  .village-image img {
+    width: 100%;
+  }
+
+  .express-opening-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-section {
+    padding: 40px 15px;
+  }
+
+  .footer-container {
+    gap: 30px;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+
+  .footer-bottom {
+    text-align: center;
+  }
+}
